@@ -1,0 +1,28 @@
+﻿<Window x:Class="zadanko.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadanko"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Background="#FFB4A3BF" Grid.ColumnSpan="2" >
+            <TextBlock Text="Gatunki Książek"  FontSize="30" Height="74" Width="226" Foreground="#FF7617C8" FontWeight="Bold" RenderTransformOrigin="0.516,0.724"/>
+            <Button x:Name="but1" Content="Fantastyka"
+                    Background="#FF9191B7" Foreground="#FF3C1565" BorderBrush="Transparent" BorderThickness="0"
+                    FontSize="25" Click="but1_Click" Height="75" Width="712" FontWeight="Bold" HorizontalAlignment="Center" />
+            <Button x:Name="but2" Content="Akcja"
+                    Background="#FF737394" Foreground="#FF3C1565" BorderBrush="Transparent" BorderThickness="0"
+                    FontSize="25" Click="but2_Click" Height="72" Width="714" FontWeight="Bold" RenderTransformOrigin="0.483,0.517" />
+            <Button x:Name="but3" Content="Przygodowe"
+                    Background="#FF9191b7" BorderBrush="Transparent" BorderThickness="0"
+                    FontSize="25" Click="but3_Click" Height="70" Width="712" Foreground="#FF3C1565" FontWeight="Bold"  />
+        </StackPanel>
+        <ContentControl x:Name="CC" Grid.ColumnSpan="2" />
+    </Grid>
+</Window>

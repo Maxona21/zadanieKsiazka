@@ -15,16 +15,6 @@ using System.Windows.Shapes;
 
 namespace zadanko
 {
-    public class List : ObservableCollection<Book>
-    {
-        public List() : base()
-        {
-            Add(new Book("Wiedźmin", "A.Sapkowski"));
-            Add(new Book("Władca Pierścieni", "J.R.R Tolkien"));
-            Add(new Book("Dór cierni i róż", "Maas Sarah J."));
-            Add(new Book("Szklany Tron", "Maas Srah J."));
-        }
-    }
 
     public class Book : INotifyPropertyChanged
     {
